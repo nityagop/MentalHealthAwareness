@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<fieldset id="question1">
+<html>
+<head>
+    <title> Anxiety</title>
+    <link rel="stylesheet" type="text/css" href="anxiety.css">
+</head>
+<body>
+    <div class="header">
+ <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2017/03/shutterstock_252021229-960.jpg" style="width:100%;height:250px;">
+</div>
+<ul class="navbar">
+ <li> <a href="home.html" class="navbar">Home</a></li>
+ <li> <a href="discover.html" class="navbar">Discover</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" class="navbar">Support</a>
+    <div class="dropdown-content">
+    <a href="support_yourself.html" class="navbar">Yourself</a>
+    <a href="support_others.html" class="navbar">Others</a>
+    </div>
+ <li> <a href="inform.html" class="navbar">Inform</a></li>
+</ul>
+
+<h3> Would you like to support your friends and family? Take this quiz to find if they might be dealing with anxiety or depression! <h3> 
+
+
+
+
+<form>
+ 1) Do they experience excessive worry <br> </br>  agree <input type="checkbox" id="q1" value="right">  neutral <input type="checkbox" id="q1" value="wrong"> disagree <input type="checkbox" id="q1" value="wrong"> <br></br> 
+
+2) Do they have insomnia
+<br> </br> agree <input type="checkbox" id="q2"  value="right"> neutral <input type="checkbox" id="q2"  value="wrong">
+ disagree <input type="checkbox" id="q2"  value="wrong"> <br> </br>
+
+3) Do they have irrational fears 
+<br></br> agree <input type="checkbox" id="q3" value="right"> neutral<input type="checkbox" id="q3" value="wrong"> disagree <input type="checkbox" id="q3" value="wrong"> 
+<br></br>
+
+4) Do they have muscle tension
+ <br> </br> agree <input type="checkbox" id= "q4" value="right"> neutral <input type="checkbox" id=  "q4" value="wrong">
+ disagree <input type="checkbox" id= "q4" value="wrong"> 
+<br></br>
+
+5) Do they experience self consciousness
+<br> </br> agree <input type= "checkbox" id="q5" value="right"> neutral <input type= "checkbox" id="q5" value="wrong"> disagree <input type= "checkbox" id="q5" value="wrong">
+<br></br>
+
+6) Do they experience compulsive behaviors
+<br> </br> agree <input type ="checkbox" id="q6" value ="right"> neutral <input type ="checkbox" id="q6" value ="wrong"> disagree <input type ="checkbox" id="q6" value ="wrong">
+<br></br>
+
+7) Do they have a persistent sad or "empty" mood
+<br> </br> agree <input type="checkbox" id="q7" value= "right"> neutral <input type ="checkbox" id="q7" value ="wrong"> disagree <input type ="checkbox" id="q7" value ="wrong">
+<br></br>
+
+8) Do they experience decreased energy
+<br> </br> agree <input type="checkbox" id= "q8" value="right"> neutral <input type="checkbox" id= "q8" value="wrong"> disagree <input type="checkbox" id= "q8" value="wrong"> 
+<br> </br>
+
+9) Do they have a feeling worthless and hopeless
+<br> </br> agree <input type ="checkbox" id="q9"  value="right"> neutral <input type="checkbox" id= "q9" value="wrong"> disagree <input type="checkbox" id= "q9" value="wrong"> 
+<br> </br>
+
+10) Do they have a difficulty concentrating
+<br> </br> agree <input type ="checkbox" id="q10" value="right"> neutral <input type="checkbox" id= "q10" value="wrong"> disagree <input type="checkbox" id= "q10" value="wrong"> 
+<br> </br>
+</form>
+
+
+<div id = "quiz">  </div> 
+<button id = "submit"> Get results </button>
+<div id = "results"> </div>
+<script type="text/javascript">
+    
+
+ submit.onclick = function() {
+
+    document.getElementById("submit").onclick = validate;
+    function validate() {
+        var checkboxes;
+        var i;
+        var right;
+        checkboxes = document.getElementById("question1").getElementsByTagName("input");
+
+
+ 
+        right = true;
+        for(i = 0; i < checkboxes.length; i++) {
+
+             //console.log("checkboxes.length", checkboxes.length)
+             //console.log("value", checkboxes[i].value)
+             //console.log("checked", checkboxes[i].checked)
+             //console.log("checkbox", i)
+
+            if(checkboxes[i].value == "right")
+            {
+              if (checkboxes[i].checked == true) {
+                    right = true;
+                }
+             else {
+                right = false;
+                break;
+                }
+            }
+        }
+            
+        
+
+        //console.log("right"+right)
+ 
+        if(right) {
+            alert("Your friend/family member might have anxiety or depression");
+        } else {
+            alert("Your friend/family member probably doesn't have anxiety or depression");
+        }
+    }
+}
+
+
+</script>
+
+
+
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Anxiety</title>
+    <link rel="stylesheet" type="text/css" href="anxiety.css">
+</head>
+<body>
+<div class="header">
+ <img src="https://www.elegantthemes.com/blog/wp-content/uploads/2017/03/shutterstock_252021229-960.jpg" style="width:100%;height:250px;">
+</div>
+<ul class="navbar">
+ <li> <a href="home.html" class="navbar">Home</a></li>
+ <li> <a href="discover.html" class="navbar">Discover</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" class="navbar">Support</a>
+    <div class="dropdown-content">
+      <a href="support_yourself.html" class="navbar">Yourself</a>
+      <a href="#" class="navbar">Others</a>
+    </div>
+ <li> <a href="inform.html" class="navbar">Inform</a></li>
+</ul>
+<p> Living with anxiety is not easy. There are many people all around the world who struggle with anxiety daily. While it may be difficult controlling when you feel anxiety, there are ways to manage it. </p>
+<p> Here are some tips for managing stress and anxiety: </p>
+<h3> Control Your Thoughts </h3>
+<ul>
+    <li> <b> Be positive: </b> Try to replace negative thoughts with positive ones. </li> <br>
+    <li> <b> Do your best: </b> Instead of aiming for perfection, be proud of what you achieve. </li>
+    <li> <b> Learn what triggers your anxiety: </b> Understand why you feel anxious so that you will have better control over it. </li>
+</ul> <br>
+<h3> Take Action </h3>
+<ul>
+    <li> <b> Relax: </b> Step away from you problems and clear your head. You could do this be listening to music, read a good book, or meditate. </li>
+    <li> <b> Exercise: </b> Your body is filled with adrenaline when you are anxious. By exercising, you are using that adrenaline in a healthy way that would distract you from your anxiety. </li>
+    <li> <b> Express yourself: </b> Instead of trying to stop your anxiety, you can embrace it. Find a place to be alone and let it all out by screaming, punching a pillow, or just going crazy. Expressing your emotions in a safe way will help you feel relaxed. </li>
+    <li> <b> Talk about it: </b> Talking to someone friendly not only lets you express your feelings, but also serves as a distraction from you symptoms. Also, it is comforting to know that you have someone supporting you during your periods of anxiety. </li>
+</ul> <br> <br> <br>
+<br> <h3> Control Your Breathing </h3>
+<p> Typically during periods of anxiety, your breathing becomes more rapid and your heart rate increases. Deep breathing is a simple, yet quick, way to feel less anxious. By deep breathing, you are causing your body to relax, which would reduce your anxiety. Slowing down your breathing will also keep you from hyperventilatng. </p>
+<p> Follow these steps to help you control your breathing: </p> <br>
+<canvas id="myCanvas" width="400" height="400" style="border:5px solid black;"></canvas>
+<ol>
+    <li> Sit comfortably. </li> <br>
+    <li> As the circle gets bigger, breathe in thorugh your nose slowly for as much as you can, then hold it for a few seconds. </li>
+    <li> As the circle becomes smaller, slowly breathe out through pursed lips. </li> <br> <br>
+    <li> Repeat this 10 times, or until you feel that you got your breathing under control. </li> <br>
+    <li> Close your eyes to feel more relaxed </li> <br>
+</ol>
+
+<script>
+var mainCanvas = document.getElementById("myCanvas");
+var mainContext = mainCanvas.getContext('2d');
+var canvasWidth = mainCanvas.width;
+var canvasHeight = mainCanvas.height;
+var angle = 0;
+var requestAnimationFrame = window.requestAnimationFrame ||
+                            window.mozRequestAnimationFrame ||
+                            window.webkitRequestAnimationFrame ||
+                            window.msRequestAnimationFrame;
+function drawCircle() {
+    mainContext.clearRect(0, 0, canvasWidth, canvasHeight);
+     
+    // color in the background
+    mainContext.fillStyle = "#EEEEEE";
+    mainContext.fillRect(0, 0, canvasWidth, canvasHeight);
+     
+    // draw the circle
+    mainContext.beginPath();
+     
+    var radius = 15 + 155 * Math.abs(Math.cos(angle));
+    mainContext.arc(200, 200, radius, 0, Math.PI * 2, false);
+    mainContext.closePath();
+     
+    // color in the circle
+    mainContext.fillStyle = "#006699";
+    mainContext.fill();
+      
+    angle += Math.PI / 800;
+     
+    requestAnimationFrame(drawCircle);
+}
+drawCircle();
+</script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+var animation = document.getElementById("animate");
+  var pos = 0;
+  for (var i = 0, 0 <= i < )
+
+for (var i = 0, 0 <= i < )
+
+ var y = 350;
+ var ballWidth = 300;
+ var ballHeight = 200;
+draw =  function myMove() {
+    background(gray);
+    fill(191, 0, 255);
+    ellipse(x, y, ballWidth, ballHeight);
+    x = x;
+    y = y;
+    ballWidth = ballWidth * 101/100;
+    ballHeight = ballHeight *  101/100;
+};
+
+<body>
+<div id="container">
+<div id="animate"></div>
+</div>
+
+<p>
+<button onclick="myMove">Click</button>
+</p>
+<script>
+ function myMove() {
+  //function draw() {
+   //background (200);
+   //pg.background(100);
+   //pg.noStroke();
+   //pg.ellipse(2,2,50,50);
+  }
+ var animation = document.getElementById("animate").value;
+ var pos = 0;
+ for (var i = 0, i < 20, i++) {
+  pos =
+ }
+
+<body>
+<canvas id="myCanvas" width="400" height="400" style="border:5px solid black; background-color: gray;"> </canvas> <br>
+<button onclick="myMove">Click</button>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var circle = canvas.getContext("2d");
+circle.beginPath();
+var radius = 50;
+circle.arc(200, 200, radius, 0, 2 * Math.PI);
+circle.fillStyle = "violet";
+circle.fill();
+function myMove() {
+  //if (radius < 150) {
+  // radius = radius + 1;
+  //}
+}
+ 
+ //for (var i = 0, i < 3, i++) {
+  //ctx.arc(200,200,50*i, 0, 2 * Math.PI);
+ //}
+</script>
+
+</body>
+</html>
+
+
+
